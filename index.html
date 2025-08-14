@@ -1,0 +1,108 @@
+<!DOCTYPE html5>
+<html>
+    <meta charset="UTF-8">
+    <head><Title>Form101</Title>
+    <style>
+        body{
+            margin: 40px;
+            font-size: medium;
+        }
+        .box_1{
+            margin-bottom: 40px;
+            display:grid;
+            grid-template-columns: 400px auto;
+            align-items: start;
+            text-align: center;
+            margin-right: 799;
+            margin-left:120
+            
+        }
+        .box_2{
+            display:grid;
+            grid-template-columns:100px auto;
+            gap:50px; 
+        }
+        .box_2 label{
+text-align: right;
+        }
+         .box_2 input{
+padding:5px;
+border:3px solid black;
+width:800px
+        }
+        .box_3{
+            display:flex;
+            flex-direction: column;
+            gap:20px
+        }
+         
+        .radioo, .checkboxx{
+display:flex;
+flex-direction: column;
+gap:5px;
+        }
+        form{
+            display: grid;
+            grid-template-columns: auto 220px;
+            align-items: start;
+            gap:30px
+        }
+
+        .radioo label:first-child,
+        .checkboxx label:first-child {font-weight: bold;}
+        img{
+            display:block;
+            height:350;
+            width:300;
+            align-items: center;
+        }
+        
+    </style>
+    
+    </head>
+    <body>
+        
+        <div class="box_1">         
+        <img src="Exe.jpg">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ipsa consequatur laboriosam, beatae veniam commodi ea, nobis aperiam ullam dolore adipisci excepturi iste! Eum soluta vel sequi laboriosam tenetur consectetur?
+        </p>
+        </div>
+       <br><br>
+        <form>
+            <div class="box_2">
+        <label for="Name">Name:</label>
+            <input type="text" id="name" name="Name" value="Full Name Here">
+          
+            <label for="Contact">Contact:</label>
+            <input type="text" id="Contact" name="Contact" pattern="[0-9]{3}[8-9]{3}[0-9]{3}">
+           
+            <label for="Email-Ad">Email-Ad</label>
+            <input type="email" id="Email" name="Email-Ad" placeholder="example@gmail.com">
+        
+            <label for="Adress">Adress:</label>
+            <input type="text" id="Adress" name="Adress" autocomplete="on">
+       
+            </div>
+    
+<div class="box_3">
+        <div class="radioo">
+    <label>Gender:</label>
+    <label><input type="radio" name="Gender" value="Male">Male</label>
+    <label><input type="radio" name="Gender" value="Female">Female</label>
+        </div>
+
+     <div class="checkboxx">
+     <label>Hobbies:</label>
+   <label><input type="checkbox" name="Hobbies" value="Swimming">Swimming</label>
+    <label><input type="checkbox" name="Hobbies" value="Biking">Biking</label>
+    <label><input type="checkbox" name="Hobbies" value="Reading">Reading</label>
+    <label><input type="checkbox" name="Hobbies" value="Watching TV">Watching TV</label>
+    <label><input type="checkbox" name="Hobbies" value="Playing">Playing</label>  
+     </div>
+</div>   </div>
+<div>
+<input type="submit">
+</div>
+ </form>
+    </body>
+</html>
